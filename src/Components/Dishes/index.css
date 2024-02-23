@@ -1,0 +1,18 @@
+.category {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.dish {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.dish button {
+  margin: 0 5px;
+  cursor: pointer;
+}

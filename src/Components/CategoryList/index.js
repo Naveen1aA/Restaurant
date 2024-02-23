@@ -1,19 +1,21 @@
 // CategoryList.js
 import React from 'react'
+import './index.css'
 
 class CategoryList extends React.Component {
   render() {
-    const {categories} = this.props
+    const {total} = this.props
 
     return (
-      <div>
-        <h2>Categories</h2>
-        {categories.map(category => (
-          <div>
-            <h1 key={category.restaurant_id}>{category.restaurant_name}</h1>
-            <h1>{category.table_menu_list.menu_category}</h1>
-          </div>
-        ))}
+      <div className="displayCategory">
+        {total &&
+          total.map(category => (
+            <div>
+              <h1 key={category.menuCategoryId} className="tab">
+                {category.menuCategory}
+              </h1>
+            </div>
+          ))}
       </div>
     )
   }
